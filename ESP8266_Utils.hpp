@@ -9,7 +9,7 @@ void ConnectWiFi_STA(bool useStaticIP = false)
      delay(100);  
      Serial.print('.'); 
    }
- 
+  
    Serial.println("");
    Serial.print("Iniciado STA:\t");
    Serial.println(ssid);

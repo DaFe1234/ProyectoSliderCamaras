@@ -27,8 +27,10 @@ void setPWM(String id, int pwm)
    Serial.print(": ");
    Serial.println(pwm);
    if(id == "1"){
-    pinMode(D2, OUTPUT);
-    analogWrite(D2, pwm);
+    float valor = 0.0;
+    valor = pwm*2.41/360;
+    String comando = "G21G91Y"+ String(valor, 2) +"F1";
+    Serial.println(comando);
    }
 }
 

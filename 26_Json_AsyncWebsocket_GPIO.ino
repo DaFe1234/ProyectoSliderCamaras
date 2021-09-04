@@ -22,7 +22,7 @@ void setup(void)
 {
 	Serial.begin(115200);
 	SPIFFS.begin();
-
+  
 	ConnectWiFi_STA();
 
 	InitServer();
